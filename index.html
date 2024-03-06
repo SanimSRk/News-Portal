@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News protal</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <header class=" ">
+    <nav class="  bg-[#dddd] mb-6 ">
+      <div class="navbar w-[85%] mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul id="finalBtan" tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-4xl font-extrabold">NewsProtal</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul id="" class="menu menu-horizontal px-1">
+
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn text-xl">News</a>
+        </div>
+      </div>
+    </nav>
+    <div class=" w-[85%] mx-auto">
+      <ul id="allNewsDataloding" class="menu menu-horizontal  hidden lg:flex justify-between">
+      </ul>
+    </div>
+    <div class="w-[85%] mx-auto text-center mt-5 flex justify-center">
+
+      <input id="inputAreys" type="text" placeholder="Search News"
+        class=" outline-none border-2 rounded-r-none input-bordered  w-full max-w-sm lg:max-w-xs px-5" /><button
+        onclick="clickToSearch()" class="btn rounded-l-none">Search</button>
+
+    </div>
+  </header>
+  <main>
+    <section class="w-[85%] mx-auto mt-7">
+      <div id="lodingSpners" class="text-center hidden">
+        <span class="loading loading-bars loading-xs"></span>
+        <span class="loading loading-bars loading-sm"></span>
+        <span class="loading loading-bars loading-md"></span>
+        <span class="loading loading-bars loading-lg"></span>
+      </div>
+      <div id="cardAppedContners" class="">
+
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
